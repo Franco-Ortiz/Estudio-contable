@@ -29,12 +29,13 @@
     height: 10vh;
 }
 
-.logo{
+.logo {
     font-size: 30px;
     color: #FFFFFF;
     font-weight: bolder;
     letter-spacing: 2px;
     padding: 10px;
+    margin: 10px;
     text-shadow: -1px 2px 1px #050505;
     background-color: #0a24408e;
     border-radius: 10px;
@@ -93,7 +94,7 @@ p.tex_Banner {
     flex-direction: column;
     box-shadow: -1px 2px 1px #050505;
 
-    
+
 
 
 }
@@ -109,7 +110,7 @@ strong {
     background-color: whitesmoke;
     grid-area: conteiner;
     height: 20vh;
-    
+
 }
 
 section h1 {
@@ -164,7 +165,8 @@ div.links {
     font-family: sans-serif;
     color: #0A2440;
 }
-.servi:hover{
+
+.servi:hover {
     background-color: slateblue;
     transition: 0.3s;
     color: #FFFFFF;
@@ -191,9 +193,15 @@ div.links {
     background-color: #5f033c;
     grid-area: pie;
 
-
 }
 
+p.fins {
+    font-family: sans-serif;
+    font-size: 17px;
+    color: #F6F8FB;
+    line-height: 25px;
+    margin: 10px 10px;
+}
 
 p.fin {
     font-family: sans-serif;
@@ -211,7 +219,7 @@ strong.contact {
 /* nosotross */
 .nosotros {
     background-image: linear-gradient(rgba(5, 2, 2, 0.2),
-    rgba(0, 0, 0, 0.2)), url(../multimedia/fondo\ o\ portada.jpg);
+            rgba(0, 0, 0, 0.2)), url(../multimedia/fondo\ o\ portada.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -263,6 +271,18 @@ article.list {
     padding: 10px;
 }
 
+.list h2 {
+
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 40px;
+}
+
+.list p {
+    font-size: 20px;
+
+}
+
 /* Novedades */
 main.mainN {
     padding: 329px 100px;
@@ -279,7 +299,7 @@ main.mainN {
     padding: 50px;
     font-family: sans-serif;
     background-image: linear-gradient(rgba(5, 2, 2, 0.2),
-    rgba(0, 0, 0, 0.2)), url(../multimedia/contacto.jpg);
+            rgba(0, 0, 0, 0.2)), url(../multimedia/contacto.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -357,4 +377,136 @@ form textarea {
 
 .boton:hover {
     background-color: slateblue;
+}
+
+/* Medias Querys */
+
+@media (max-width: 680px) {
+    .menu {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .logo {
+        font-size: 25px;
+    }
+
+    nav {
+        width: 100%;
+    }
+
+    li a {
+        font-size: 18px;
+    }
+
+    .bannerT {
+        height: 85vh;
+    }
+
+    p.tex_Banner {
+        font-size: 22px;
+        margin: 100px 50px;
+    }
+
+    .contenido {
+        padding: 10px 25px;
+    }
+
+    section h1 {
+        font-size: 40px;
+        padding: 10px;
+    }
+
+    section p {
+        padding: 10px;
+    }
+
+    div.princ {
+        justify-content: space-between;
+        padding: 10px 25px;
+        flex-direction: column;
+        height: 100vh;
+    }
+
+    img.chica {
+        display: none;
+    }
+
+    .links {
+        padding: 25px 20px;
+    }
+
+    .servi {
+        padding: 20px 15px;
+    }
+
+    .servi h2 {
+        font-size: 25px;
+    }
+
+    .servi p {
+        font-size: 18xp;
+    }
+
+    p.fin {
+        font-size: 15px;
+
+    }
+
+    p.fins {
+        display: none;
+    }
+
+    /* Nosotros */
+    .nosotros {
+        height: 85vh;
+        padding: 70px 50px;
+
+    }
+
+    .somos {
+        line-height: 30px;
+    }
+
+    .somos h2 {
+        font-size: 40px;
+        text-align: center;
+    }
+
+    .somos p {
+        font-weight: normal;
+    }
+
+    /* Servicios */
+
+.list h2{
+   font-size: 25px;
+}
+.list br{
+    display: none;
+}
+.list p{
+    font-size: 18px;
+}
+/* Contacto */
+.formulario{
+    flex-direction: column;
+    justify-content: normal;
+    height: 95vh;
+    padding: 30px;
+
+}
+.envio{
+    font-size: 20px;
+}
+.envio br{
+    display: none;
+}
+.envio h1{
+    line-height: 50px;
+}
+.relleno{
+    font-size: 20px;
+    margin: 20px;
+line-height: 28px;}
 }
