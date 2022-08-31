@@ -50,6 +50,7 @@
 
 ul li {
     display: inline-block;
+    border-right: 1px solid white;
 }
 
 ul li:hover {
@@ -119,6 +120,7 @@ section h1 {
     font-size: 60px;
     font-weight: bold;
     line-height: 40px;
+    margin-bottom: 20px;
 }
 
 section p {
@@ -195,7 +197,7 @@ div.links {
 }
 
 
-p.fin {
+.pie p {
     font-family: sans-serif;
     font-size: 17px;
     color: #F6F8FB;
@@ -253,7 +255,7 @@ strong.contact {
     flex-direction: column;
     padding: 53px;
     background-color: #FFFFFF;
-    height: auto;
+    height: 80vh;
 }
 
 article.list {
@@ -330,15 +332,26 @@ form label {
 }
 
 form input {
-    width: 300px;
-    border-radius: 5px;
+    width: 200px;
+    border-radius: 30px;
+    text-align: center;
+    color: #0A2440;
 }
 
-form select {
-    background-color: #5f033c86;
-    width: 150px;
-    font-family: sans-serif;
+form input:focus{
+    background-color: #0A2440;
     color: #FFFFFF;
+
+}
+
+
+form select {
+    background-color: #5f033c56;
+    width: 150px;
+    text-align: center;
+    font-weight: bold;
+    color: #FFFFFF;
+    border-radius: 10px;
 }
 
 form select:hover {
@@ -346,13 +359,14 @@ form select:hover {
 }
 
 form textarea {
-    border-radius: 5px;
+    border-radius: 15px;
     padding: 20px;
 }
 
 .boton {
-    width: 100px;
+    width: 80px;
     padding: 7px;
+    font-weight: bold;
 }
 
 .boton:hover {
