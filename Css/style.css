@@ -364,7 +364,8 @@ form textarea {
 @media (max-width: 680px) {
     .menu {
         flex-direction: column;
-        height: auto;
+        height: 15vh;
+        justify-content: flex-end;
     }
 
     .logo {
@@ -490,3 +491,4 @@ form textarea {
     margin: 20px;
 line-height: 28px;}
 }
+
